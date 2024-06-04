@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+header {
+    color: black;
+    font-family: fantasy;
+    padding: 10px 0;
+    text-align: left;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+
+ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.buttons {
+    text-align: right;
+    margin-top: -60px; /* Ajusta el margen superior negativo para mover los botones hacia arriba */
+}
+
+.buttons .button {
+    padding: 10px 20px;
+    margin: 0 5px; /* Ajusta margen entre botones */
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+.gallery img {
+    margin: 8px; /* Añade espacio entre las imágenes */
+    transition: transform 0.3s ease; /* Añade una transición de animación */
+    width: 250px; /* Establece el ancho deseado para todas las imágenes */
+    height: autopx; /* Ajusta la altura automáticamente para mantener la proporción */
+    max-width: 100%; /* Asegura que las imágenes no se salgan del contenedor */
+}
+
+.gallery img:hover {
+    transform: scale(1.1); /* Agranda la imagen al pasar el ratón sobre ella */
+}
+
+.header-content {
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+.header-left {
+    margin-right: 5px; /* Espacio entre la imagen y el texto */
+}
+
+.header-right {
+    flex-grow: 1; /* Permite que el texto ocupe el espacio restante */
+}
+
+.header-left img {
+    width: 50px; 
+    height: auto;
+}

@@ -1,0 +1,281 @@
+body {
+    font-family: Arial, sans-serif;
+    background: white url('../') no-repeat center center/cover;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: white;
+    font-family: fantasy;
+    padding: 10px 0;
+    text-align: left;
+    background: rgb(5, 33, 51);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.header-left {
+    margin-right: 10px;
+}
+
+.header-left img {
+    width: 130px;
+    height: auto;
+}
+
+.header-right {
+    flex-grow: 1;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.gallery {
+    text-align: center;
+    padding: 20px;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-container img {
+    margin: 8px;
+    transition: transform 0.3s ease;
+    width: 200px; /* Tamaño fijo para las imágenes */
+    height: auto;
+    border-radius: 8px;
+}
+
+.image-container img:hover {
+    transform: scale(1.1);
+}
+
+.barra {
+    font-family: 'Lato', sans-serif;
+    width: 10%;
+    height: 100vh;
+    position: fixed;
+    transition: .4s all;
+    z-index: 0;
+    right: 0; /* Cambiado a 'right' para mover la barra a la derecha */
+    top: 0;
+}
+
+.barra ul {
+    padding: 6px;
+    text-align: center;
+}
+
+.barra li {
+    transition: all .3s;
+    list-style: none;
+}
+
+.barra a {
+    text-decoration: none;
+    font-weight: normal;
+    transition: .3s all;
+    font-size: 0px;
+    padding: 0px;
+}
+
+.barra h2 {
+    text-align: center;
+    color: white;
+    padding: 7px;
+    padding-bottom: 7px;
+    font-size: 0px;
+}
+
+.barra img {
+    padding-top: 30px;
+    padding-right: 10px; /* Cambiado a 'padding-right' para mover la imagen */
+    transition: .4s all; /* Añadida transición para la imagen */
+}
+
+.barra:hover {
+    width: 70%;
+    background: rgba(5, 33, 51, 0.98);
+}
+
+.barra:hover h2 {
+    padding: 15px;
+    font-size: 35px;
+}
+
+.barra:hover a {
+    font-size: 20px;
+    color: white;
+    display: block;
+    padding: 20px;
+}
+
+.barra:hover img {
+    height: 0px;
+    padding-right: 0px; /* Cambiado a 'padding-right' para mover la imagen */
+}
+
+.barra:hover li {
+    border-top: 1px solid #03121b;
+    width: 100%;
+}
+
+.barra:hover ul:last-of-type {
+    border-bottom: 1px solid #03121b;
+}
+
+.barra:hover a:hover {
+    font-size: 25px;
+    padding: 30px 0px;
+    background: rgba(23, 78, 112, 0.98);
+}
+
+@media (min-width: 768px) {
+    .barra:hover {
+        width: 20%;
+    }
+}
+
+.social-networks {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #052133;
+    margin-top: 20px;
+}
+
+.social-networks h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #fdf7f7;
+}
+
+.social-networks a {
+    display: inline-flex;
+    color: #ffffff;
+    height: 48px;
+    width: 48px;
+    background-color: #000000;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin: 0 6px;
+    transition: transform 0.4s;
+}
+
+.social-networks a:hover {
+    transform: scale(1.3);
+}
+
+.social-networks a.facebook {
+    background-color: #2629F2;
+}
+
+.social-networks a.twitter {
+    background-color: #33D1FF;
+}
+
+.social-networks a.correo {
+    background-color: #000000;
+}
+
+.social-networks a.youtube {
+    background-color: #ff0000;
+}
+
+.social-networks a.instagram {
+    background-color: #ff0080;
+}
+
+.about-us {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #22fab9cc;
+    margin-top: 20px;
+}
+
+.about-us h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.about-us p {
+    font-size: 1.2em;
+    font-family: Arial Black;
+    color: #ffffff;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/*planes*/
+.plans {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #000000;
+    margin-top: 20px;
+}
+
+.plans h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+.plan-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.plan {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.plan:hover {
+    transform: translateY(-10px);
+}
+
+.plan h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.plan p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.plan button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.plan button:hover {
+    background: #0056b3;
+}
