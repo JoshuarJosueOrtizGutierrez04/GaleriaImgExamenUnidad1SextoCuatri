@@ -13,7 +13,8 @@ if (isset($email_actual) && !empty($email_actual) && isset($nuevo_usuario) && !e
         die("Error de conexión: " . $conexion->connect_error);
     }
 
-    // Actualizar los datos del usuario
+    // Actualizar los datos del usuario hola
+    
     $consulta_actualizar = "UPDATE usuarios SET nombre_usuario='$nuevo_usuario', contraseña='$nueva_contraseña' WHERE email='$email_actual'";
 
     if ($conexion->query($consulta_actualizar) === TRUE) {
