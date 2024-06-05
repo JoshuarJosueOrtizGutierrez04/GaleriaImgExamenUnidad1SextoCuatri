@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,23 +15,18 @@
         <center>
             <h4>CAMBIAR DATOS</h4>
         </center>
-
        
-        <form action="validar2.php" method="post">
-            <input class="controls" type="text" name="usuario_anterior" id="usuario_anterior" for="usuario_anterior" placeholder="Usuario anterior">
-            <input class="controls" type="text" name="email" id="email" for="email" placeholder="Nuevo Correo">
-            <input class="controls" type="text" name="user" id="user" for="user" placeholder="Nuevo Usuario">
-            <input class="controls" type="password" name="pass" id="pass" for="pass" placeholder="Nueva Contraseña">
+        <form action="Validar2.php" method="post">
+            <input class="controls" type="text" name="email_actual" id="email_actual" placeholder="Correo actual">
+            <input class="controls" type="text" name="nuevo_usuario" id="nuevo_usuario" placeholder="Nuevo Usuario">
+            <input class="controls" type="password" name="nueva_contraseña" id="nueva_contraseña" placeholder="Nueva Contraseña">
            
             <br>
-            <p><input type="checkbox" name="Politicas">Acepto las condiciones de esta página</p>
+            <p><input type="checkbox" name="Politicas"> Acepto las condiciones de esta página</p>
                 
             <input class="botons" type="submit" value="Enviar" id="boton">
             <input class="botons" type="reset" value="Borrar" id="boton">
         </form>
     </section>
-     
-
-    <br><br><br><br>
 </body>
 </html>
